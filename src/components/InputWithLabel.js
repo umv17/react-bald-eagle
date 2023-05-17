@@ -20,7 +20,9 @@ const InputWithLabel = ({ todoTitle, handleTitleChange, children }) => {
 }
 
 InputWithLabel.propTypes = {
-    onAddTodo: PropTypes.func.isRequired,
+    todoTitle: PropTypes.string.isRequired,
+    handleTitleChange: PropTypes.func.isRequired,
+    children: PropTypes.node,
 };
 
 export default InputWithLabel;

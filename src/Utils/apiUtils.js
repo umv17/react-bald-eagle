@@ -24,6 +24,11 @@ export default async function fetchApiData(action, fields, id, key) {
             url += `/${id}`;
             body = null;
             break;
+        case 'update':
+            method = 'PATCH';
+            url += `/${id}`;
+            body = JSON.stringify({ fields });
+            break;
         default:
             throw new Error('Invalid action');
     }

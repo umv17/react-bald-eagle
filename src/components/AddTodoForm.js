@@ -1,6 +1,6 @@
 import { useState } from "react";
 import InputWithLabel from "./InputWithLabel";
-import styles from '../styles/AddTodoForm.module.css';
+import styles from '../styles/addTodoForm.module.css';
 import PropTypes from 'prop-types';
 
 
